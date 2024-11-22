@@ -2,9 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import GitHubIcon from "../icons/Github.astro";
+import MailIcon from "../icons/Mail.astro"
+import SocialPill from "../components/SocialPill.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout 
+title="Portfolio Jose Manuel - Desarollador y Programador Web"
+description = "Contrata a Jose">
+
   <main>
     <section class="w-full mx-auto lg:w-[740px] py-44">
       <h1
@@ -12,9 +18,21 @@ import Badge from "../components/Badge.astro";
       >
         Hey, soy Jose Manuel <div class="flex justify-center items-center">
         </div>
-        <Badge>Disponible para trabajr</Badge>
+        <Badge>Disponible para trabajar</Badge>
       </h1>
-      <h2 class="text-xl opacity-80">experiencia</h2>
+      <h2 class="text-xl opacity-80 text-wrap">experiencia</h2>
+
+
+      <nav>
+        <SocialPill href="https://github.com/">
+          <GitHubIcon class="w-6 h-6" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="https://github.com/">
+          <MailIcon class="w-6 h-6" />
+          josemanuelluzuriaga@gmail.com
+        </MailIcon>
+      </nav>
     </section>
   </main>
 </Layout>
